@@ -49,6 +49,7 @@ nav img{
 .nav-links ul li a:hover{
     border-top: 2px solid #0065fc; 
     color: #0065fc; 
+    cursor: pointer;
 }
 
 
@@ -98,6 +99,7 @@ nav img{
 }
 .searchbar:hover{
     background-color: #deebff;
+    cursor: pointer;
 }
 
 
@@ -175,7 +177,7 @@ nav img{
 
 
 .btn:hover{
-    cursor: crosshair;
+    cursor: pointer;
     background-color: #deebff;
 }
 
@@ -389,7 +391,7 @@ nav img{
     flex-wrap: wrap;
     max-width: 100%;
     min-height: 100%;
-    margin: 30px 20px;
+    margin: 30px 50px;
     
 }
 
@@ -402,7 +404,7 @@ nav img{
     justify-content: space-between;
     width: auto;
 }
-.actcontainer a:nth-child(3n-2){
+.actcontainer a:nth-child(1){
     display: flex;
     flex-direction: column;
     height: 460px;
@@ -412,20 +414,52 @@ nav img{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.actcontainer a:nth-child(2n+3){
+.actcontainer a:nth-child(4){
     display: flex;
     flex-direction: column;
-    height: 45%;
+    height: 460px;
     width: 22%;
     margin:0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.actcontainer a:nth-child(4n+2){
+.actcontainer a:nth-child(5){
     display: flex;
     flex-direction: column;
-    height: 48%;
+    height: 46%;
+    width: 22%;
+    margin:0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.actcontainer a:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    height: 46%;
+    width: 22%;
+    margin:0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.actcontainer a:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    height: 62%;
+    width: 22%;
+    margin:0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.actcontainer a:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    height: 30%;
     width: 22%;
     margin:0px;
     border-radius: 10px;
@@ -451,7 +485,7 @@ nav img{
 
 
 .image2{
-    height: 73%;
+    height: 78%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -462,10 +496,10 @@ nav img{
 
 
 .image3{
-    height: 68%;
+    height: 55%;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
-    object-position: 0% 0%;
+    object-position: 0% 14%;
     object-fit: cover;
 
 }
@@ -491,7 +525,7 @@ nav img{
 }
 
 .image6{
-    height: 72%;
+    height: 71%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -526,7 +560,7 @@ nav img{
     gap:20px;
     max-height: fit-content;
     width: 60% ;
-    margin:0px 20px;
+    margin:0px 50px;
 }
 
 .footerheading h4{
@@ -594,7 +628,7 @@ line-height: 32px;
     nav{
         padding: 0px 0px;
         flex-direction: column;
-        border-bottom: #f2f2f2 solid 5px;
+        
     }
     nav img{
         height: 55px;
@@ -621,24 +655,29 @@ line-height: 32px;
         padding: 24px 25px;
     
     }
-    #left{
-        width:50%
-    }
+   
+
     #left a{
         padding: 24px 25px;
     }
-    #right{
+    #right, #left{
         width: 50%;
+        padding-bottom: 30px;
+        border-bottom: #f2f2f2 solid 5px;
     }
+
+    #left:hover , #right:hover{
+    
+        border-top:0px;
+        border-bottom: solid 5px #0065fc;
+}
     #right a{
         padding: 3px 55px 24px 58px;
     }
     
-    .nav-links ul li a:hover{
     
-        color: #0065fc; 
-        border-top:0px;
-        border-bottom: solid 5px #0065fc;
+    .nav-links ul li a:hover{ 
+        border-top:0px;   
     }
 
     .main-heading{
